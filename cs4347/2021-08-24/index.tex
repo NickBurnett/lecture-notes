@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+
+\newcommand{\topic}[1]{\large{\textbf{#1}}\normalsize}
+
+\title{Database Systems Lecture 1}
+\date{August 24, 2021}
+\author{Nicolas Andrew Burnett}
+
+\begin{document}
+  \maketitle
+  \section{Syllabus}
+  \begin{itemize}
+    \item HW(4) 10\%, Projects(2) 25\%, SQL Assignments(2) 10\%, Attendance 5\%, Midterm 20\%, Final 30\%
+    \item Exams will be 40\% FRQ, 60\% MCQ
+    \item Exams at testing center. Midterm \textbf{Oct 8th}
+    \item Attendance is mandatory
+  \end{itemize}
+  \section{Chapter 1}
+  \topic{What is a database?}
+  \begin{itemize}
+    \item Means of persisting data \& non-volatile memory. Persists between RAM cycles. Stored in disk space rather than RAM
+    \item Has information about entities, their attributes, and their relationship to other entities
+    \item Relational databases allow the maintanence of relationships between database entities
+    \item Problem domain may be called \textbf{Business Domain or Universe of Discourse}
+  \end{itemize}
+  \topic{What is a Database Management System?}
+  \begin{itemize}
+    \item DBMS is a server or application that acts as an interface to the database
+    \item Provides services used to \textbf{CRUD} entity instances
+    \item DBMS' provide services to one or more cients. Can maintain more than more database
+    \item Provides languages and tools used to define the structure of entities (schema) and interact with them
+    \item Protects databases from data corruption using built-in rules or through some sort of interface-level sanitization
+    \item \textbf{Data Definition Language (DDL)} is used to describe entities
+    \item Entities are defined by attributes, and entities maintain associations with other entities
+  \end{itemize}
+  \topic{MATTHEW IS RIGHT THIS MAN MAKES ANY TOPIC THE MOST BORING, BOILERPLATE TOPIC IN THE UNIVERSE}
+\end{document}

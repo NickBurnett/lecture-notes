@@ -1,5 +1,11 @@
 \documentclass{article}
 \usepackage[a4paper, margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{color}
+
+\lstset{frame=tb}
+\newcommand{\java}[0]{\lstset{language=Java}}
+\newcommand{\python}[0]{\lstset{language=Python}}
 
 \title{Programming Language Paradigms Lecture 1}
 \date{August 23, 2021}
@@ -8,6 +14,13 @@
 \begin{document}
   \maketitle
   \section{Syllabus}
+  \java
+  \begin{lstlisting}
+  // Main.java
+  public static void main(String[] args) {
+    System.out.println(15);
+  }
+  \end{lstlisting}
   \begin{itemize}
     \item 3 Exams 27\% (multiple choice, 30 questions), HW 32\%, Projects 32\%, Quizzes 9\%
     \item Programming will happen, but it's disecting the theoretical aspects of programming language \textbf{design and implementation}
