@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+
+\newcommand{\topic}[1]{\large{\textbf{#1}}\normalsize}
+
+\title{Automata Theory Lecture 3}
+\date{August 30, 2021}
+\author{Nicolas Andrew Burnett}
+
+\begin{document}
+  \maketitle
+  \section{Nondeterministic Finite Automata}
+  \begin{itemize}
+    \item Can transition to multiple states rather than one
+    \item Epsilon edge allows a free transition. Treated as an empty string
+  \end{itemize}
+  \topic{Transition Table}
+  \begin{itemize}
+    \item If you see an input at a given state, it's the set where each element is the subscript of the state on which you can transition to
+  \end{itemize}
+\end{document}

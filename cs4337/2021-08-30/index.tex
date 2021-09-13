@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{color}
+
+\lstset{frame=tb}
+\newcommand{\topic}[1]{\large\textbf{#1}\normalsize}
+\newcommand{\java}[0]{\lstset{language=Java}}
+\newcommand{\python}[0]{\lstset{language=Python}}
+
+\title{Programming Language Paradigms Lecture 3}
+\date{August 30, 2021}
+\author{Nicolas Andrew Burnett}
+
+\begin{document}
+  \maketitle
+  \section{Chapter 1 (cont)}
+  \topic{Influence of Language Design}
+  \begin{itemize}
+    \item Major influence is computer architecture. von Neumann influenced imperative languages, used today
+    \item Programmming design methodologies also influence language design\begin{itemize}
+      \item top-down design. lead to work on type checking and structured programming
+      \item data-oriented design methodologies. lead to abstract data-types, object-oriented programming
+      \item concurrent programming. shifted focus back to procedural-oriented design
+    \end{itemize}
+  \end{itemize}
+  \topic{Language Categories}
+  \begin{itemize}
+    \item imperative (java, c++, python)
+    \item functional (scheme, haskal)
+    \item logic
+    \item object-oriented
+  \end{itemize}
+  \topic{Implementation Methods}
+  \topic{Compilation}\begin{itemize}
+    \item starts with the source
+    \item sent to lexical analysis (detects keywords, create groups of characters)
+    \item sent to syntax analysis (analyze groups and ensure order is correct)
+    \item sent to intermediate code (turned into low-level code, but not machine code. may also optimize)
+    \item generates machine code (takes intermediate code and converts to machine code, generates executable)
+  \end{itemize}
+  \topic{Pure Interpretation}
+  \begin{itemize}
+    \item Runs exactly what it's given. Executes while parsing.
+  \end{itemize}
+  \topic{Hybrid}
+  \begin{itemize}
+    \item starts from source
+    \item lexical analysis
+    \item sytax analysis
+    \item intermediate code (considered 'virtual machine code')
+    \item intermediate code is fed into an interpretor.
+  \end{itemize}
+  \section{Chapter 3}
+  Chapter 3 will formally define the formation and semantics of a program.
+  \newline
+  \topic{Syntax}
+  \begin{itemize}
+    \item \textbf{Alphabet:} a set of symbols
+    \item \textbf{String:} a sequence of symbols from some alphabet
+    \item \textbf{Language:} a set of strings made from some alphabet
+    \item \textbf{Sentence:} a string in a language
+    \item \textbf{Lexeme:} description of lowest-level syntactic unit
+    \item \textbf{Token:} a category of lexemes (dentifiers, keywords, operators, etc)
+    \begin{itemize}
+      \item two ways to formally define languages
+      \item \textbf{Recognition:} check if a string is in the language
+      \item \textbf{Generation:} generate a sentence of a language
+    \end{itemize}
+    \item \textbf{Grammars:} known as generators, tells how to generate a string
+
+    \topic{Backus-Naur Form}
+    \begin{itemize}
+      \item context-free grammar, simply sees circumstances and decides what a symbol is
+      \item \textbf{Terminal Symbol:} a symbol from the alphabet, lexeme, or token
+      \item \textbf{Nonterminal Symbol:} a symbol that can be substituted via a production rule
+    \end{itemize}
+    \topic{Describing Lists}
+    \begin{itemize}
+      \item usually utilizes a form of recursion
+    \end{itemize}
+    \topic{Derivations}
+    \begin{itemize}
+      \item start with start symbol
+      \item apply rule to substitute a Nonterminal
+      \item repeat until only terminals are left
+      \item to derive a pecific string, choose the right rules
+      \item \textbf{Sentential Form:} strings in the derivation
+      \item \textbf{Leftmost Derivation:} always choose the left most nonterminal to substitute
+      \item \textbf{Rightmost Derivation:} always choose the right most nonterminal to substitute
+    \end{itemize}
+    \topic{Parse Trees}
+    \begin{itemize}
+      \item lose order of substitute information (no leftmost or rightmost)
+      \item gain hierarchical structure information
+      \item any informational order is lost
+    \end{itemize}
+  \end{itemize}
+\end{document}

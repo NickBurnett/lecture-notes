@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+
+%\newcommand{\topic}[1]{\large{\textbf{#1}}\normalsize}
+
+\title{Automata Theory Lecture 2}
+\date{August 25, 2021}
+\author{Nicolas Andrew Burnett}
+
+\begin{document}
+  \maketitle
+  \section{Deterministic Finite Automata}
+  \begin{itemize}
+    \item Finite automata, single-directional
+    \item Q = set of states (set)
+    \item \begin{math}
+      \Sigma = alphabet (allowed\_input)
+    \end{math}
+    \item \begin{math}
+      \delta = transitions (Q*\Sigma -> Q)
+    \end{math}
+    \item F(0) = start state
+    \item F = set of accepted states
+    \item Arrow going to a state from nothing is defined as the start state
+  \end{itemize}
+  \begin{math}
+    L(M) = A
+  \end{math} | Language of machine M regonizes A
+\end{document}
