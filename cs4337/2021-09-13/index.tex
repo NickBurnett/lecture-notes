@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{color}
+
+\lstset{frame=tb}
+\newcommand{\java}[0]{\lstset{language=Java}}
+\newcommand{\python}[0]{\lstset{language=Python}}
+\newcommand{\topic}[1]{\large\textbf{#1}\normalfont}
+
+\title{Programming Language Paradigms Lecture}
+\date{September 13, 2021}
+\author{Nicolas Andrew Burnett}
+
+\begin{document}
+  \maketitle
+  \section{Chapter 4}
+  \topic{Lexical Analysis}
+  \begin{itemize}
+    \item called lexer
+    \item pattern matching
+    \item find lexeme's and tokens
+    \item includes skipping whitespace and comments
+    \item methods of specifying lexers\begin{itemize}
+      \item Formal description using regex (or similar language)\begin{itemize}
+        \item lexer for floats may be \textit{[0-9]+backslash.[0-9]+}
+      \end{itemize}
+      \item Design state transition diagram. Use the design to write a program\begin{itemize}
+        \item similar to an automaton
+        \item uses a state diagram to parse each character
+      \end{itemize}
+      \item Design state transition diagram, but turn it into a table and write a table-driven program
+    \end{itemize}
+  \end{itemize}
+  \topic{Syntax Analysis}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+\end{document}
